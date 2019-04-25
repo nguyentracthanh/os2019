@@ -1,0 +1,36 @@
+thanh@ubuntu:~$ ps -man
+   PID TTY      MAJFLT MINFLT   TRS   DRS  SIZE  SWAP   RSS  SHRD   LIB   DT COMMAND
+  2623 tty2          0    478     6 176445 44113    -  6416     -     -    - /us
+  2904 tty2          4   6448    51 360252 90076    - 30252     -     -    - upd
+  2915 tty2         38  26463   534 1188993 297382  - 134724    -     -    - /us
+  3038 tty2          5   2270    15 606032 151512   - 32476     -     -    - /us
+  3381 pts/0         1   2017   834 20645  5370     -  5124     -     -    - bas
+  3811 tty2        800 365276   176 1992559 498184  - 310488    -     -    - /us
+  4823 tty2         39 1296436  176 1597211 399347  - 284112    -     -    - /us
+  4923 tty2          0  19742   176 1390263 347610  - 109364    -     -    - /us
+ 39254 tty2         18  50742  2280 740411 185673   - 156752    -     -    - /us
+ 39371 pts/0         1    170   110 30005  7529     -  1440     -     -    - ps 
+thanh@ubuntu:~$ gnome-calculator
+thanh@ubuntu:~$ ps aux|grep -i calculator
+thanh     40916  6.7  0.9 917200 40096 pts/1    Sl+  20:18   0:01 gnome-calculator
+thanh     41023  0.0  0.0  17480   836 pts/0    S+   20:18   0:00 grep --color=auto -i calculator
+thanh@ubuntu:~$ cat /proc/40916/status
+Name:	gnome-calculato
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	2
+Speculation_Store_Bypass:	vulnerable
+Cpus_allowed:	ffffffff,ffffffff,ffffffff,ffffffff
+Cpus_allowed_list:	0-127
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	446
+nonvoluntary_ctxt_switches:	142
+thanh@ubuntu:~$ kill -STOP 40916
+thanh@ubuntu:~$ kill -CONT 40916
+thanh@ubuntu:~$ kill -KILL 40916
+
+
+
+
+
