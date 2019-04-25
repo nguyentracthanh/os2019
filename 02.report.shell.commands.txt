@@ -1,0 +1,20 @@
+thanh@ubuntu:~$ ls | grep list
+thanh@ubuntu:~$ ls | wc
+     10      10      91
+thanh@ubuntu:~$ ls | free
+              total        used        free      shared  buff/cache   available
+Mem:        4015492     1083264     1731536       12016     1200692     2634788
+Swap:       1459804           0     1459804
+thanh@ubuntu:~$ cat /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 78
+model name	: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
+stepping	: 3
+microcode	: 0xc2
+cpu MHz		: 2399.998
+cache size	: 3072 KB
+thanh@ubuntu:~$ sudo find . -name "*.jpg"
+[sudo] password for thanh: 
+
