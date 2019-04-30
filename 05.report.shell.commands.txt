@@ -1,0 +1,62 @@
+thanh@ubuntu:~$ cat /proc/sched_debug
+Sched Debug Version: v0.11, 4.18.0-17-generic #18-Ubuntu
+ktime                                   : 3919814.631851
+sched_clk                               : 3921009.937015
+cpu_clk                                 : 3919811.257591
+jiffies                                 : 4295872250
+sched_clock_stable()                    : 1
+
+sysctl_sched
+  .sysctl_sched_latency                    : 18.000000
+  .sysctl_sched_min_granularity            : 2.250000
+  .sysctl_sched_wakeup_granularity         : 3.000000
+  .sysctl_sched_child_runs_first           : 0
+  .sysctl_sched_features                   : 4118331
+  .sysctl_sched_tunable_scaling            : 1 (logaritmic)
+ S      JS Helper  4205    490320.545112      4777   120         0.000000      2640.643696         0.000000 0 0 /autogroup-103
+ S      JS Helper  4206    490322.942537      4671   120         0.000000      2084.850042         0.000000 0 0 /autogroup-103
+ S          Timer  4208    490840.142896     85395   120         0.000000      3522.289637         0.000000 0 0 /autogroup-103
+ S  ImgDecoder #1  4211    488476.407379        99   120         0.000000        13.466103         0.000000 0 0 /autogroup-103
+ SImageBr~geChild  4213    434759.901539         5   120         0.000000         0.183232         0.000000 0 0 /autogroup-103
+ S  StyleThread#0  4265    476968.150125       835   120         0.000000       119.307813         0.000000 0 0 /autogroup-103
+ S  ImgDecoder #2  4278    488777.693652        88   120         0.000000        11.086772         0.000000 0 0 /autogroup-103
+ SChrome_~dThread  4242    490415.213584       864   120         0.000000        80.899982         0.000000 0 0 /autogroup-103
+ S          gdbus  4244    466882.273852        13   120         0.000000         2.035259         0.000000 0 0 /autogroup-103
+ S      JS Helper  4247    436502.065279         3   120         0.000000         0.119813         0.000000 0 0 /autogroup-103
+ S  Socket Thread  4250    436508.251205         3   120         0.000000         0.185929         0.000000 0 0 /autogroup-103
+ S    PaintThread  4253    436517.411078         2   120         0.000000         0.159879         0.000000 0 0 /autogroup-103
+ S        ImageIO  4255    436526.500317         1   120         0.000000         0.089245         0.000000 0 0 /autogroup-103
+ S ProcessHangMon  4259    436532.645447         4   120         0.000000         0.145133         0.000000 0 0 /autogroup-103
+ S           bash  4392        40.349792       128   120         0.000000       157.258035         0.000000 0 0 /autogroup-142
+ I    kworker/3:2  4535    440377.166140       880   120         0.000000        64.647609         0.000000 0 0 /
+ S           bash  4678        27.854086        43   120         0.000000        29.719673         0.000000 0 0 /autogroup-148
+>R            cat  4686        58.524557        10   120         0.000000        30.893146         0.000000 0 0 /autogroup-148
+thanh@ubuntu:~$ cat /proc/2/sched
+kthreadd (2, #threads: 1)
+-------------------------------------------------------------------
+se.exec_start                                :       4007554.144999
+se.vruntime                                  :        450144.442827
+se.sum_exec_runtime                          :            63.205873
+se.nr_migrations                             :                    1
+nr_switches                                  :                  319
+nr_voluntary_switches                        :                  319
+nr_involuntary_switches                      :                    0
+se.load.weight                               :              1048576
+se.runnable_weight                           :              1048576
+se.avg.load_sum                              :                 1090
+se.avg.runnable_load_sum                     :                 1090
+se.avg.util_sum                              :              1112751
+se.avg.load_avg                              :                   20
+se.avg.runnable_load_avg                     :                   20
+se.avg.util_avg                              :                   20
+se.avg.last_update_time                      :        4007554144256
+se.avg.util_est.ewma                         :                   31
+se.avg.util_est.enqueued                     :                   21
+policy                                       :                    0
+prio                                         :                  120
+clock-delta                                  :                   18
+numa_pages_migrated                          :                    0
+numa_preferred_nid                           :                   -1
+total_numa_faults                            :                    0
+current_node=0, numa_group_id=0
+numa_faults node=0 task_private=0 task_shared=0 group_private=0 group_shared=0
