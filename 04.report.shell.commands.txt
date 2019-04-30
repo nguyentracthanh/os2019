@@ -1,0 +1,19 @@
+thanh@ubuntu:~/os2019$ ps -ef
+UID         PID   PPID  C STIME TTY          TIME CMD
+root          1      0  0 19:02 ?        00:00:12 /lib/systemd/systemd --system --deserialize
+root          2      0  0 19:02 ?        00:00:00 [kthreadd]
+root      41090      2  0 20:25 ?        00:00:00 [kworker/u256:2-events_unbound]
+thanh     41144  39972  0 20:26 tty2     00:00:09 /usr/lib/firefox/firefox -contentproc -chil
+thanh     41272  39972  0 20:31 tty2     00:00:00 /usr/lib/firefox/firefox -contentproc -chil
+thanh     41301   2286  4 20:31 tty2     00:00:36 codeblocks
+root      41373      2  0 20:32 ?        00:00:00 [kworker/u256:0-events_power_efficient]
+root      41492      2  0 20:39 ?        00:00:00 [kworker/0:2-events]
+root      41495      2  0 20:39 ?        00:00:00 [kworker/3:1-cgroup_destroy]
+root      41499      2  0 20:40 ?        00:00:00 [kworker/u256:1-events_unbound]
+root      41551      2  0 20:40 ?        00:00:00 [kworker/2:0-events]
+thanh     41629  40900  0 20:45 pts/0    00:00:00 ps -ef
+thanh@ubuntu:~/os2019$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:          3.8Gi       1.9Gi       249Mi        89Mi       1.7Gi       1.6Gi
+Swap:         1.4Gi       2.0Mi       1.4Gi
+
