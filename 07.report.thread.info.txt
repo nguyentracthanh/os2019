@@ -1,0 +1,6 @@
+thanh@ubuntu:~$ ps ax|grep firefox
+  4251 tty2     Rl+    1:39 /usr/lib/firefox/firefox -new-window
+  4434 tty2     Sl+    0:09 /usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 123 -prefMapSize 174234 -parentBuildID 20190410105222 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 4251 true tab
+thanh@ubuntu:~$ ls /proc/4434/task|wc
+     26      26     130
+
